@@ -43,7 +43,7 @@ public class HorarioVerao {
 	private static TimeZone tz = new SimpleTimeZone(TimeZone.getDefault()
 			.getRawOffset(), "America/Sao_Paulo", Calendar.OCTOBER, 18, 0,
 			3600000 * 1 + 60000 * 0, // 01h00
-			Calendar.FEBRUARY, 20, 0, 3600000 * 2 + 60000 * 0, // 02h00
+			Calendar.FEBRUARY, 21, 0, 3600000 * 2 + 60000 * 0, // 02h00
 			3600000);
 
 	/**
