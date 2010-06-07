@@ -1,21 +1,21 @@
 package net.danieljurado.horarioVerao;
 
 /*
- * Copyright © 2006 Carlos Duarte do Nascimento (Chester)
+ * Copyright ï¿½ 2006 Carlos Duarte do Nascimento (Chester)
  * cd@pobox.com
  *
- * Este programa é um software livre; você pode redistribui-lo e/ou
- * modifica-lo dentro dos termos da Licença Pública Geral GNU como
- * publicada pela Fundação do Software Livre (FSF); na versão 2 da
- * Licença, ou (na sua opnião) qualquer versão.
+ * Este programa ï¿½ um software livre; vocï¿½ pode redistribui-lo e/ou
+ * modifica-lo dentro dos termos da Licenï¿½a Pï¿½blica Geral GNU como
+ * publicada pela Fundaï¿½ï¿½o do Software Livre (FSF); na versï¿½o 2 da
+ * Licenï¿½a, ou (na sua opniï¿½o) qualquer versï¿½o.
  *
- * Este programa é distribuido na esperança que possa ser util,
- * mas SEM NENHUMA GARANTIA; sem uma garantia implicita de ADEQUAÇÂO
- * a qualquer MERCADO ou APLICAÇÃO EM PARTICULAR. Veja a Licença
- * Pública Geral GNU para maiores detalhes.
+ * Este programa ï¿½ distribuido na esperanï¿½a que possa ser util,
+ * mas SEM NENHUMA GARANTIA; sem uma garantia implicita de ADEQUAï¿½ï¿½O
+ * a qualquer MERCADO ou APLICAï¿½ï¿½O EM PARTICULAR. Veja a Licenï¿½a
+ * Pï¿½blica Geral GNU para maiores detalhes.
  *
- * Você deve ter recebido uma cópia da Licença Pública Geral GNU
- * junto com este programa, se não, escreva para a Fundação do Software
+ * Vocï¿½ deve ter recebido uma cï¿½pia da Licenï¿½a Pï¿½blica Geral GNU
+ * junto com este programa, se nï¿½o, escreva para a Fundaï¿½ï¿½o do Software
  * Livre(FSF) Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
@@ -24,12 +24,12 @@ import java.util.SimpleTimeZone;
 import java.util.TimeZone;
 
 /**
- * Permite que as aplicações Java ajustem o timezone da JVM para o horário de
- * verão do Brasil, de duas formas:
+ * Permite que as aplicaï¿½ï¿½es Java ajustem o timezone da JVM para o horï¿½rio de
+ * verï¿½o do Brasil, de duas formas:
  * <p>
- * - Chamando o método <code>ajustaTimeZone()</code><br>
- * - Trocando a chamada da jvm, passando esta classe (que por sua vez irá chamar
- * a classe original), vide método <code>main</code> abaixo.
+ * - Chamando o mï¿½todo <code>ajustaTimeZone()</code><br>
+ * - Trocando a chamada da jvm, passando esta classe (que por sua vez irï¿½ chamar
+ * a classe original), vide mï¿½todo <code>main</code> abaixo.
  * 
  * @author chester
  */
@@ -37,8 +37,8 @@ import java.util.TimeZone;
 public class HorarioVerao {
 
 	/**
-	 * Timezone para o horário de verão de 2009 Inicio: 18/Out; Fim: 20/Fev;
-	 * Hora início: 01h00; Hora fim: 02h00
+	 * Timezone para o horï¿½rio de verï¿½o de 2009 Inicio: 18/Out; Fim: 20/Fev;
+	 * Hora inï¿½cio: 01h00; Hora fim: 02h00
 	 */
 	private static TimeZone tz = new SimpleTimeZone(TimeZone.getDefault()
 			.getRawOffset(), "America/Sao_Paulo", Calendar.OCTOBER, 18, 0,
@@ -47,7 +47,7 @@ public class HorarioVerao {
 			3600000);
 
 	/**
-	 * Seta o timezone da máquina virtual Java para o nosso timezone customizado
+	 * Seta o timezone da maquina virtual Java para o nosso timezone customizado
 	 */
 	public static void ajustaTimeZone() {
 		TimeZone.setDefault(tz);
